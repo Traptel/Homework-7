@@ -10,8 +10,8 @@ print(dictionary_1)
 # Завдання 2
 print("\nЗавдання 2")
 dictionary_random = {f"num_{i}": random.randint(1, 10) for i in range(1, 21)}
-
 result = 1
+
 for value in dictionary_random.values():
     result *= value
 
@@ -34,8 +34,8 @@ print(result_dict)
 # Завдання 5
 print("\nЗавдання 5")
 text = "Python is good language to learn and in same time we like to tell that it is cool expereance for us"
-
 letter_number = {}
+
 for letter in text:
     if letter.isalpha():
         letter = letter.lower()
@@ -68,13 +68,14 @@ text = """
 і в стягів багряному шумі …
 """
 punctuation = ['.', ',', '"', '“', '”', '…', '!',  '—' ';' ':']
+
 for sing in punctuation:
     text = text.replace(sing, '')
 
 text_l = text.lower()
 text_lst = text_l.split()
-
 dct = {}
+
 for word in text_lst:
     dct.setdefault(word, 0)
     dct[word] += 1
